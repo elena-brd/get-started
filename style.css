@@ -1,0 +1,110 @@
+:root {
+    --primary-color: #83a0f0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--primary-color);
+    color: #333;
+    padding: 0 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    margin: 0 auto;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+#card {
+    background: #fff;
+    width: 45%;
+    height: 50%;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #6881c8;
+    background: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem;
+}
+
+#card .pregress-bar {
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+}
+
+#card .pregress-bar .circle {
+    width: 27px;
+    height: 27px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 2px 2px 4px #c7cad1;
+}
+
+#card .pregress-bar .active {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+#card .pregress-bar .bar {
+    height: 2px;
+    width: 20%;
+    background: #ddd;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#card .pregress-bar .bar-active {
+    height: 2px;
+    width: 40%;
+    background: var(--primary-color);
+}
+
+#card .container-content {
+    padding: 2.5rem 2.4rem;
+}
+
+#card .container-content h3 {
+    font-size: 1rem;
+}
+
+#card .container-content p {
+    padding: 1rem 0 3rem;
+    font-size: 0.9rem;
+    font-weight: 400;
+
+}
+
+#card .container-content .btn {
+    background: var(--primary-color);
+    color: #fff;
+    font-size: 0.85rem;
+    font-weight: 500;
+    padding: 0.5rem 3.2rem;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px #c7cad1;
+    border: none;
+    cursor: pointer;
+    transition: all 0.4s ease-in;
+}
+
+#card .container-content .btn:hover {
+    background: #c7cad1;
+    color: #333;
+}
